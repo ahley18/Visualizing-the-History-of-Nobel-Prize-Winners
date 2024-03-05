@@ -29,7 +29,6 @@ max_female_dict = {max_female_decade_category['decade'].values[0]: max_female_de
 print("\nHighest Female Proportion (Decade and Category): " + str(max_female_dict))
 
 #Who was the first woman to receive a Nobel Prize, and in what category? Save your string answers as first_woman_name and first_woman_category.
-#first_woman_name = nobel.groupby(['full_name', 'female_winner','year']).isin()
 first_woman_name = nobel[nobel['sex'] == 'Female']['full_name'].values[0]
 print('\nFirst Woman Winner: ' + str(first_woman_name))
 
